@@ -21,7 +21,7 @@ export const ToDoItem = (props) => {
   return (
     <li className="todo-item" key={item.id}>
             <div className="todo-item-body">
-              <Tooltip title="Created on + {item.date}">
+              <Tooltip title={item.date}>
             <Checkbox style={ item.checked ? {'color': 'grey', 'text-decoration': 'line-through'} : {}} className="title" checked={item.checked} onChange={onCheckItem}>
                 {item.name} 
             </Checkbox>
